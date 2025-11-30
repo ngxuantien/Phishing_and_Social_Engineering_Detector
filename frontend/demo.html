@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Công cụ phát hiện lừa đảo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🛡️</div>
+    <h1>Phishing Detector</h1>
+    <h5 class="subtitle">Phát hiện phishing và social engineering bằng AI</h5>
+
+    <div class="input-group">
+      <label class="input-label">Nhập văn bản hoặc URL cần kiểm tra</label>
+      <textarea id="inputText" class="input-field" placeholder="Ví dụ: Bạn đã trúng thưởng 20 triệu đồng. Nhấn vào link để nhận..."></textarea>
+    </div>
+
+    <button id="checkBtn" class="btn-check">
+        Kiểm tra
+    </button>
+
+    <div id="result" class="result">
+        <div id="mainRes"></div>
+        <div id="subRes" class="result-detail"></div>
+    </div>
+
+    <div class="footer">
+      Model: <a href="https://huggingface.co/nxtcute/xlm-r-phishing-and-social-engineering-detector-vi" target="_blank">nxtcute/xlm-r-phishing-and-social-engineering...</a><br>
+      Dữ liệu được lưu trữ an toàn để cải thiện mô hình
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

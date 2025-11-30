@@ -1,0 +1,15 @@
+venv/
+env/
+.venv/
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.env
+backend/.env
+.DS_Store
+.vscode/
+.idea/
+*.bin
+*.pth
+xlmr-finetuned/
